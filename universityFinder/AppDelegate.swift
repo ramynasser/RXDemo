@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let service = GithubService(provider: GithubProvider)
+//        let store = RealmStore()
+//
+//        let tabBarController = self.window?.rootViewController as? UITabBarController
+//
+//        let searchNavigationController = tabBarController?.viewControllers?[0] as? UINavigationController
+//        let historyNavigationController = tabBarController?.viewControllers?[1] as? UINavigationController
+//
+//        let searchViewController = searchNavigationController?.viewControllers.first as? SearchViewController
+//        searchViewController?.viewModel = SearchViewModel(service: service)
+//        let historyViewController = historyNavigationController?.viewControllers.first as? HistoryViewController
+//        historyViewController?.viewModel = HistoryViewModel(store: store)
+        
         return true
     }
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellHeader2" id="U6b-Vx-4bR" customClass="CellHeader2" customModule="universityFinder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="X7d-5z-YwC">
+                    <rect key="frame" x="10" y="4" width="310" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Top properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-Wv-y91">
+                            <rect key="frame" x="0.0" y="0.0" width="129" height="23.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Book your best properties with affordable price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Oki-kl-nIB">
+                            <rect key="frame" x="0.0" y="29.5" width="252.5" height="14"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdC-QI-1H8">
+                            <rect key="frame" x="0.0" y="49" width="30" height="3"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.36078431370000003" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="hA5-LJ-zzh"/>
+                                <constraint firstAttribute="height" constant="3" id="tpa-BD-Xfa"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="YaG-C5-h19"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.31372549020000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="X7d-5z-YwC" secondAttribute="bottom" constant="4" id="1aF-Ps-w2b"/>
+                <constraint firstItem="X7d-5z-YwC" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="4" id="G84-hx-jry"/>
+                <constraint firstItem="X7d-5z-YwC" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="UmV-eL-6ZA"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="X7d-5z-YwC" secondAttribute="trailing" id="d0g-4J-wfx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="detail" destination="Oki-kl-nIB" id="wmq-gP-jTw"/>
+                <outlet property="title" destination="KJi-Wv-y91" id="tdl-Sc-0x4"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="51.27436281859071"/>
+        </collectionReusableView>
+    </objects>
+</document>
