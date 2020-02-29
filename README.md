@@ -30,7 +30,7 @@ extension Formatters {
 log.setup(formatter: .default)
 ```
 - Create your own `Logger` by changing its `Storage` .
- * by implement your storage inhert from Storage and change log to it 
+ * by add your storage implementation by implement Storage interface logger to it 
 ```swift
 class ApiStorage: Storage {
   func saveLog(logItem: LogItem) {
